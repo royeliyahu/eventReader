@@ -1,0 +1,7 @@
+use: 
+http://localhost:8080/eventcount
+
+and:
+http://localhost:8080/wordcount
+
+to get data back

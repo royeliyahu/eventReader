@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="refresh" content="300"/>
+    <title>Statistics for User</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>event count</h1>
+    <div class = "container">
+        <table class="table table-striped">
+            <tr th:each="product : ${message}">
+                <td th:text="${message}"></td>
+            </tr>
+            <tr>
+                <th>word</th>
+                <th>count</th>
+            </tr>
+            <tr th:each="product : ${dataList}">
+                <td th:text="${product.word}"></td>
+                <td th:text="${product.count}"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
